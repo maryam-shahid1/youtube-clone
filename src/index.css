@@ -39,6 +39,8 @@ code {
 
 .video-iframe {
   border-radius: 20px;
+  width: 95%;
+  height: 600px;
 }
 
 .details-container {
@@ -114,5 +116,25 @@ code {
   .category-btn {
     margin: 10px;
   }
-}
+  .search-bar{
+    margin:0px;
+    max-width: 100%;
+  }
+  .video-iframe{
+    width:500px;
+    height: 300px;
 
+  }
+  .video-player{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .details-container{
+    max-width: 100%;
+  }
+
+  .video-list{
+    width: 100%;
+  }
+}

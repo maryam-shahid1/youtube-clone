@@ -10,13 +10,15 @@ class Feed extends React.Component {
     render() {
         return (
             <div>
-                <Stack sx={{ flexDirection: { xs: "column", md: "row" }, height: "100vh" }}>
+                <Stack sx={{ flexDirection: { xs: "column", md: "row" }, height:{xs:'160vh', md: "100vh" }}}>
                     <Box
                         sx={{
                             height: "100%",
-                            width: "10%",
+                            maxWidth: "100%",
                             px: { xs: 0, md: 2 },
-                            overflowY: "auto",
+                            overflowY: { xs:'none', md: 'auto'},
+                            overflowX:{xs:'auto', md:'none'},
+                            flexDirection: { xs: "column", md: "row" }, height: "100vh"
                         }}
                     >
                         <Sidebar />
@@ -24,10 +26,10 @@ class Feed extends React.Component {
                     <Box
                         p={2}
                         sx={{
-                            width: "80%",
-                            overflowY: "auto",
-                            flex: 2,
-                            overflowX: "none",
+                            width: {md: "80%"},
+                            overflowY: {md:"auto"},
+                            flex: {md:2},
+                            overflowX: {md: "none"},
                         }}
                     >
                         <VideoPlayer
@@ -38,8 +40,10 @@ class Feed extends React.Component {
                     <Box
                         sx={{
                             display: "flex",
-                            justifyContent: "center",
-                            width: "20%",
+                            flexDirection: 'column',
+                            justifyContent: {md: "center"},
+                            marginLeft:{xs:'59px', md:'0px'},
+                            width: {xs:"100%", md: "20%"},
                             overflowY: "auto",
                         }}
                     >

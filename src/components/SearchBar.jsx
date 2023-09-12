@@ -26,13 +26,14 @@ class SearchBar extends React.Component {
                     onSubmit={this.onSubmit}
                     sx={{
                         borderRadius: 20,
-                        marginLeft: '80%',
-                        width: '500px',
+                        marginLeft: {md: '80%'},
+                        width: {md: '500px', sm:'100%', xs:'100%'},
                         marginTop: '33px',
                         border: '1px solid #e3e3e3',
                         pl: 2,
                         boxShadow: 'none',
                         mr: { sm: 5 },
+
                     }}
                 >
                     <input
